@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    color: black;
+}
+.game {
+    width: 100%;
+    min-height: 100vh;
+}
+.top {
+    height: 120px;
+    background-color: skyblue   ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.top h1 {
+    font-size: 28px;
+}
+.info {
+    display: flex;
+    gap: 30px;
+}
+.info p {
+    font-size: 18px;
+}
+button {
+    border: none;
+    padding: 12px 20px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: yellowgreen;
+}
+#gameArea {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    background: linear-gradient(to right, orange, orangered);
+}
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.circle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px white;
+}
+#gameOver {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: goldenrod;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px 30px black;
+}
+#gameOver h2 {
+    font-size: 32px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Circle Rush</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="game">
+            <div class="top">
+                <h1> Circle Rush</h1>
+                <div class="info">
+                    <p> Score: <span id="score">0</span></p>
+                    <p>Time: <span id="time">30</span></p>
+                </div>
+                <button id="startButton"> Start Game</button>
+            </div>
+            <div id="gameArea"></div>
+            <div id="gameOver">
+                <h2> Game Over!</h2>
+                <p>
+                    Your Score:
+                    <span id="finalScore">0</span>
+                </p>
+                <button id="restartButton"> Play Again</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
